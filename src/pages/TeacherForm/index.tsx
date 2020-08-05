@@ -1,4 +1,5 @@
 import React, { useState, FormEvent } from "react";
+import { useHistory } from "react-router-dom";
 import PageHeader from "../../components/PageHeader";
 import Input from "../../components/Input";
 import warningIcon from "../../assets/images/icons/warning.svg";
@@ -8,6 +9,7 @@ import "./styles.css";
 import api from "../../services/api";
 
 function TeacherForm() {
+  const { push } = useHistory();
   const [name, setName] = useState("");
   const [avatar, setAvatar] = useState("");
   const [whatsapp, setWhatsApp] = useState("");
@@ -52,6 +54,7 @@ function TeacherForm() {
       })
       .then(() => {
         alert("Cadastro realizado com sucesso!");
+        push('/')
       })
       .catch(() => {
         alert("Erro no cadastro!");
