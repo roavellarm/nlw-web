@@ -54,7 +54,7 @@ function TeacherForm() {
       })
       .then(() => {
         alert("Cadastro realizado com sucesso!");
-        push('/')
+        push("/");
       })
       .catch(() => {
         alert("Erro no cadastro!");

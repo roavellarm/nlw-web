@@ -1,0 +1,6 @@
+.go-back-link {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  padding: 2rem 3rem;
+}

@@ -1,0 +1,16 @@
+#button {
+  width: 100%;
+  background-color: var(--color-secundary);
+  padding: 1.6rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.8rem;
+  transition: background-color 0.2s;
+  color: var(--color-button-text);
+  font: 700 1.7rem Archivo;
+}
+
+#button:hover {
+  background-color: var(--color-secundary-dark);
+}
